@@ -4,97 +4,95 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Winter Opticians Ltd | Hull</title>
+  <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: #333;
-      background-color: #f8f8f8;
+    /* Smooth scrolling for anchor links */
+    html {
+      scroll-behavior: smooth;
     }
-    header {
-      background-color: #005EB8;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    main {
-      padding: 20px;
-      max-width: 900px;
-      margin: auto;
-      background: white;
-    }
-    section {
-      margin-bottom: 30px;
-    }
-    h1, h2 {
-      color: #005EB8;
-    }
-    footer {
-      background: #eee;
-      text-align: center;
-      padding: 15px;
-      font-size: 0.9em;
-    }
-    .map {
-      width: 100%;
-      height: 300px;
-      border: none;
+    /* Custom hover effects */
+    .hover-scale:hover {
+      transform: scale(1.05);
+      transition: transform 0.2s ease-in-out;
     }
   </style>
 </head>
-<body>
-
-  <header>
-    <h1>Winter Opticians Ltd</h1>
-    <p>Your local eye care specialists in Hull</p>
+<body class="font-sans text-gray-800 bg-gray-100">
+  <!-- Header with prominent title -->
+  <header class="bg-blue-700 text-white py-12 md:py-16 text-center">
+    <h1 class="text-4xl md:text-5xl font-bold mb-4">Winter Opticians</h1>
+    <p class="text-lg md:text-xl">Your trusted eye care specialists in Hull</p>
   </header>
 
-  <main>
-    <section>
-      <h2>About Us</h2>
-      <p>Winter Opticians Ltd is an independent optician offering comprehensive eye care services in Hull. Established in 2003, we are committed to providing high-quality optical services with a personal touch.</p>
-      <p>Our experienced optometrists offer NHS and private eye tests, contact lens fittings, and a wide range of stylish frames and lenses.</p>
+  <!-- Main content -->
+  <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <!-- About Us Section -->
+    <section class="mb-12 bg-white rounded-lg shadow-lg p-6 md:p-8">
+      <h2 class="text-2xl md:text-3xl font-semibold text-blue-700 mb-4">About Us</h2>
+      <p class="text-gray-600 mb-4">Winter Opticians Ltd is an independent optician offering comprehensive eye care services in Hull. Established in 2003, we are committed to providing high-quality optical services with a personal touch.</p>
+      <p class="text-gray-600">Our experienced optometrists offer NHS and private eye tests, contact lens fittings, and a wide range of stylish frames and lenses.</p>
     </section>
 
-    <section>
-      <h2>Our Services</h2>
-      <ul>
-        <li>NHS & Private Eye Tests</li>
-        <li>Children’s Eye Care</li>
-        <li>Contact Lens Fitting & Advice</li>
-        <li>Prescription Glasses & Sunglasses</li>
-        <li>Aftercare & Repairs</li>
+    <!-- Services Section -->
+    <section class="mb-12 bg-white rounded-lg shadow-lg p-6 md:p-8">
+      <h2 class="text-2xl md:text-3xl font-semibold text-blue-700 mb-4">Our Services</h2>
+      <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-600">
+        <li class="flex items-center"><span class="mr-2">👓</span> NHS & Private Eye Tests</li>
+        <li class="flex items-center"><span class="mr-2">👶</span> Children’s Eye Care</li>
+        <li class="flex items-center"><span class="mr-2">🔍</span> Contact Lens Fitting & Advice</li>
+        <li class="flex items-center"><span class="mr-2">🕶️</span> Prescription Glasses & Sunglasses</li>
+        <li class="flex items-center"><span class="mr-2">🛠️</span> Aftercare & Repairs</li>
       </ul>
     </section>
 
-    <section>
-      <h2>Contact Us</h2>
-      <p><strong>Address:</strong><br>
-      268-270 Hessle Road,<br>
-      Hull, HU3 3EA</p>
-
-      <p><strong>Phone:</strong> <a href="tel:01482329709">01482 329709</a></p>
-      <p><strong>Opening Hours:</strong><br>
-      Mon–Fri: 9am–5:30pm<br>
-      Sat: 9am–1pm<br>
-      Sun: Closed</p>
-
-      <p><strong>Email:</strong> <a href="mailto:Info@winteropticians.karoo.co.uk">Info@winteropticians.karoo.co.uk</a></p>
-       <!-- <a href="mailto:Info@winteropticians.co.uk">Info@winteropticians.co.uk</a></p> -->
+    <!-- Contact Us Section -->
+    <section class="mb-12 bg-white rounded-lg shadow-lg p-6 md:p-8">
+      <h2 class="text-2xl md:text-3xl font-semibold text-blue-700 mb-4">Contact Us</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <p class="text-gray-600 mb-4">
+            <strong>Address:</strong><br>
+            268-270 Hessle Road,<br>
+            Hull, HU3 3EA
+          </p>
+          <p class="text-gray-600 mb-4">
+            <strong>Phone:</strong><br>
+            <a href="tel:01482329709" class="text-blue-600 hover:underline hover-scale">01482 329709</a>
+          </p>
+          <p class="text-gray-600">
+            <strong>Email:</strong><br>
+            <a href="mailto:Info@winteropticians.karoo.co.uk" class="text-blue-600 hover:underline hover-scale">Info@winteropticians.karoo.co.uk</a>
+          </p>
+        </div>
+        <div>
+          <p class="text-gray-600">
+            <strong>Opening Hours:</strong><br>
+            Mon–Fri: 9am–5:30pm<br>
+            Sat: 9am–1pm<br>
+            Sun: Closed
+          </p>
+        </div>
+      </div>
     </section>
 
-    <section>
-      <h2>Find Us</h2>
-      <iframe
-        class="map"
-        src="https://www.google.com/maps?q=268-270+Hessle+Road,+Hull,+HU3+3EA&output=embed">
-      </iframe>
+    <!-- Find Us Section -->
+    <section class="mb-12">
+      <h2 class="text-2xl md:text-3xl font-semibold text-blue-700 mb-4 text-center">Find Us</h2>
+      <div class="w-full h-80 md:h-96 rounded-lg overflow-hidden shadow-lg">
+        <iframe
+          class="w-full h-full"
+          src="https://www.google.com/maps?q=268-270+Hessle+Road,+Hull,+HU3+3EA&output=embed"
+          frameborder="0"
+          allowfullscreen
+          loading="lazy">
+        </iframe>
+      </div>
     </section>
   </main>
 
-  <footer>
-    &copy; 2025 Winter Opticians Ltd. Registered in England No. 04912391.
+  <!-- Footer -->
+  <footer class="bg-gray-200 text-gray-600 text-center py-6">
+    <p>© 2025 Winter Opticians Ltd. Registered in England No. 04912391.</p>
   </footer>
-
 </body>
 </html>
